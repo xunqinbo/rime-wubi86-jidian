@@ -11,7 +11,7 @@
 |  操作系统   | 对应的输入法 | github                                                                     |    收费状态    | 版本要求     |
 |:-------:|:------:|----------------------------------------------------------------------------|:----------:|----------|
 | Windows |  小狼毫   | [https://github.com/rime/weasel](https://github.com/rime/weasel)           |     免费     |          |
-|  macOS  |  鼠须管   | [https://github.com/rime/squirrel](https://github.com/rime/squirrel)       |     免费     | v1.00 之后 |
+|  macOS  |  鼠须管   | [https://github.com/rime/squirrel](https://github.com/rime/squirrel)       |     免费     | v0.16.x |
 | Ubuntu  |  中州韵   | [https://github.com/rime/ibus-rime](https://github.com/rime/ibus-rime)     |     免费     |          |
 |   iOS   |  仓输入法  | [https://github.com/imfuxiao/Hamster](https://github.com/imfuxiao/Hamster) | 免费(高级功能收费) |          |
 | Android | 同文输入法  | [https://github.com/osfans/trime](https://github.com/osfans/trime)         |     免费     |          |
