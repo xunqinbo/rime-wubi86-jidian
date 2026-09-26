@@ -21,6 +21,7 @@ patch:
     page_size: 5                    # 候选词数量，最多支持 10 个
   switcher:
     hotkeys:        # 弹出菜单的快捷键
+      - "Control+grave"       # Ctrl+` 打开方案切换菜单（0.16.2 默认键）
       - "Control+0"
       - "Shift+Control+0"
     abbreviate_options: true

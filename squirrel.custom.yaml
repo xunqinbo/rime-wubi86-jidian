@@ -19,14 +19,10 @@ patch:
   preset_color_schemes:
     roseo_maple:
       name: 玫枫 / Roseo Maple
-      # v1.00 之后新增  ------ start  -----
-      candidate_format: "[label]. [candidate] [comment]"   # 候选词格式， label:序号，candidate：候选词，comment: 词条注释
-      candidate_list_layout: linear                        # stacked | linear
-      text_orientation: horizontal                         # horizontal | vertical
-      # v0.18 新增 ------ start  -----
-      status_message_type: mix # long | short | mix
-      memorize_size: true # 控制选项标是否在接触屏幕边缘时有粘性
-      # ----------------  end  -------
+      # candidate_format 是 v1.0 专属键（[label] 在 0.16.2 会被当字面量），已移除；候选序号样式由默认提供。
+      # 以下两个键 0.16.2 支持，保留以恢复横排候选：
+      candidate_list_layout: linear          # stacked | linear（0.16.2 支持）
+      text_orientation: horizontal           # horizontal | vertical（0.16.2 支持）
 
       alpha: 1.0                                # 候选窗口透明度：符点型数据，小数点形式，不然出错无法正常显示皮肤，0 时隐藏候选框
       border_height: 0                          # 边距宽度 - 上下
@@ -45,7 +41,7 @@ patch:
       hilited_corner_radius: 5                  # 圆角大小 - 高亮候选词
       hilited_candidate_text_color: 0x4F11FA    # 字体颜色 - 高亮候选词
       hilited_candidate_back_color: 0xEDEDF9    # 背景颜色 - 高亮候选词  8位的前两位是颜色透明度，00就是透明，FF就是不透明
-      hilited_candidate_label_color: 0x884F11FA # 字体颜色 - 高亮候选词
+      label_hilited_color: 0x884F11FA # 字体颜色 - 高亮候选词（0.16.2 旧键名）
 
       label_font_face: PingFang SC              # 字体    - 序号
       label_font_point: 17                      # 字体大小 - 序号
@@ -67,11 +63,9 @@ patch:
 
     roseo_maple_dark:
       name: 玫枫-暗黑 / Roseo Maple Dark
-      candidate_format: "[label]. [candidate] [comment]"   # 候选词格式， label:序号，candidate：候选词，comment: 词条注释
-      candidate_list_layout: linear                        # stacked | linear
-      text_orientation: horizontal                         # horizontal | vertical
-      status_message_type: mix # long | short | mix
-      memorize_size: true # 控制选项标是否在接触屏幕边缘时有粘性
+      # candidate_format 是 v1.0 专属键，已移除；以下两个键 0.16.2 支持，保留以恢复横排：
+      candidate_list_layout: linear          # stacked | linear（0.16.2 支持）
+      text_orientation: horizontal           # horizontal | vertical（0.16.2 支持）
 
       alpha: 1.0                                # 候选窗口透明度：符点型数据，小数点形式，不然出错无法正常显示皮肤，0 时隐藏候选框
       border_height: 1                          # 边框宽度-上下
@@ -88,7 +82,7 @@ patch:
       hilited_corner_radius: 5                  # 圆角大小 - 高亮候选词
       hilited_candidate_text_color: 0xffffff    # 字体颜色 - 高亮候选词
       hilited_candidate_back_color: 0x00ffffff    # 背景颜色 - 高亮候选词  8位的前两位是颜色透明度，00就是透明，FF就是不透明
-      hilited_candidate_label_color: 0x5AC461 # 字体颜色 - 高亮候选词
+      label_hilited_color: 0x5AC461 # 字体颜色 - 高亮候选词（0.16.2 旧键名）
 
       label_font_face: PingFang SC              # 字体    - 序号
       label_font_point: 17                      # 字体大小 - 序号
